@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-container {
+    @apply sticky left-0 top-0  h-auto bg-gray-500 bg-opacity-90 text-white grid lg:grid-cols-4 grid-cols-2;
+  }
+  .header-logo {
+    @apply p-5;
+  }
+  .header-links {
+    @apply col-start-2 lg:col-start-4 flex py-5;
+  }
+  .header-link {
+    @apply px-5;
+  }
+  .footer-container {
+    @apply relative bottom-0 h-auto bg-gray-100 flex flex-col items-center justify-center my-5;
+  }
+  .footer-links {
+    @apply col-start-2 lg:col-start-4 flex py-5 my-5;
+  }
+  .footer-link {
+    @apply px-5;
+  }
+  .usage-card {
+    @apply border rounded-xl text-center h-48 flex items-center justify-center hover:shadow-md shadow-sm;
+  }
+  .usage-card-desc {
+    @apply italic font-thin;
+  }
+}
